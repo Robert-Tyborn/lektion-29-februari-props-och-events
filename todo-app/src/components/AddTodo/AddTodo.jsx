@@ -20,19 +20,19 @@ function AddTodo() {
     // }
 
     return (
-        <section>
-            <input type='text' onKeyUp={ handleInput } />
+        <section className='add-todo'>
+            <input type='text' className='add-todo__input' onKeyUp={ handleInput } />
             <label htmlFor="done" on>Status:</label>
             <input type="checkbox" id="done" onChange={ handleCheckbox } />
-            <button onClick={ () => { console.log(todo); } }>Lägg till todo</button>
+            <button className='add-todo__button' onClick={ () => { console.log(todo); } }>Lägg till todo</button>
         </section>
     )
 }
 
-const input = document.querySelector('input');
+// const input = document.querySelector('input');
 
-input.addEventListener('keyup', (event) => {
-    console.log(event.target.value);
-});
+// input.addEventListener('keyup', (event) => {
+//     console.log(event.target.value);
+// });
 
 export default AddTodo;

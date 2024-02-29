@@ -11,7 +11,7 @@ function TodoItem(props) {
     }
 
     return (
-        <li>{ task } - { doneText }</li>
+        <li className='todo-item'>{ task } - { doneText }</li>
     )   
 }
 

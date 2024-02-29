@@ -5,6 +5,11 @@
   text-align: center;
 }
 
-h1 {
-  color: #93f;
+.app {
+  min-width: 18rem;
+
+  .app__todos {
+    list-style-type: none;
+    padding: 0;
+  }
 }

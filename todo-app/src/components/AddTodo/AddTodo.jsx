@@ -22,8 +22,10 @@ function AddTodo() {
     return (
         <section className='add-todo'>
             <input type='text' className='add-todo__input' onKeyUp={ handleInput } />
-            <label htmlFor="done" on>Status:</label>
-            <input type="checkbox" id="done" onChange={ handleCheckbox } />
+            <section>
+                <label htmlFor="done">Status:</label>
+                <input type="checkbox" id="done" onChange={ handleCheckbox } />
+            </section>
             <button className='add-todo__button' onClick={ () => { console.log(todo); } }>Lägg till todo</button>
         </section>
     )

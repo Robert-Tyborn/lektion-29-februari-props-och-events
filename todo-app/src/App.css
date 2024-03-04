@@ -6,7 +6,7 @@
 }
 
 .app {
-  min-width: 18rem;
+  min-width: 16rem;
 
   .app__todos {
     list-style-type: none;

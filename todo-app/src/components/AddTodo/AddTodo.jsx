@@ -8,6 +8,7 @@ function AddTodo() {
 
     function handleInput(event) {
         todo.task = event.target.value;
+        console.log(event.target.value)
     }
 
     function handleCheckbox(event) {
@@ -21,7 +22,7 @@ function AddTodo() {
 
     return (
         <section className='add-todo'>
-            <input type='text' className='add-todo__input' onKeyUp={ handleInput } />
+            <input type='text' className='add-todo__input' onChange={ handleInput } />
             <section>
                 <label htmlFor="done">Status:</label>
                 <input type="checkbox" id="done" onChange={ handleCheckbox } />
